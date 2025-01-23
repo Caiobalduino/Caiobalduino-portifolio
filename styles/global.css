@@ -27,6 +27,39 @@ body {
 header {
   background-color: var(--gray-blue);
   padding: 20px;
+  position: relative;
+}
+
+/* animação borda */
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(96, 239, 249, 0.8) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: lightMove 3s linear infinite;
+  filter: brightness(1) saturate(1);
+  box-shadow: 0 5px 10px rgba(0, 238, 255, 0.6), 
+              0 10px 20px rgba(0, 238, 255, 0.4),
+              0 15px 30px rgba(0, 238, 255, 0.2);
+}
+
+/* Animação luz */
+@keyframes lightMove {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }
 
 .container {

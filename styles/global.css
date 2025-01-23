@@ -5,3 +5,32 @@
   -webkit-font-smoothing: antialiased; /* Font smooth */
   -moz-osx-font-smoothing: grayscale; /* firefox in macOS*/
 }
+
+:root {
+  font-size: 62.5%;
+  --font-primary: "Roboto", sans-serif;
+  /* cores */
+  --dark-blue: #040c0e;
+  --gray-blue: #132226;
+  --light-blue: #6bdefe;
+  --gray: #515b56;
+  --beige: #be9063;
+  --brown: #a4978e;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--dark-blue);
+  color: var(--brown);
+}
+
+header {
+  background-color: var(--gray-blue);
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+

@@ -8,7 +8,8 @@
 
 :root {
   font-size: 62.5%;
-  --font-primary: "Roboto", sans-serif;
+  --font-primary: "Raleway", serif;
+  --font-secondary: "Chakra Petch", serif;
   /* cores */
   --dark-blue: #040c0e;
   --gray-blue: #132226;
@@ -24,89 +25,7 @@ body {
   color: var(--brown);
 }
 
-header {
-  background-color: var(--gray-blue);
-  padding: 20px;
-  position: relative;
-  filter: brightness(1) saturate(1);
-  box-shadow: 0 0px 5px rgba(0, 238, 255, 0.6),
-              0 0px 10px rgba(0, 238, 255, 0.4),
-              0 0px 10px rgba(0, 238, 255, 0.2);
-}
 
-.header-container {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Logo */
-.header-logo img {
-  width: 80px;
-  height: auto;
-}
-
-/* Select */
-.header-language select {
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--text-color);
-  border-radius: 5px;
-  background-color: var(--gray-blue);
-  color: var(--text-color);
-  cursor: pointer;
-  font-size: 1.6rem;
-}
-
-/* Navegação */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 3rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: 1.8rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: rgba(0, 238, 255, 1);
-}
-
-/* Animação Borda */
-header::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 30%,
-    rgba(96, 239, 249, 0.8) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 200% 100%;
-  animation: lightMove 3s linear infinite;
- 
-}
-
-/* Animação luz */
-@keyframes lightMove {
-  0% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: -100% 0;
-  }
-}
 
 .container {
   max-width: 1200px;
